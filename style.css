@@ -1,0 +1,327 @@
+/* ============================= */
+/* RESET */
+/* ============================= */
+* {
+    box-sizing: border-box;
+}
+
+/* ============================= */
+/* BODY */
+/* ============================= */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    background: #f5f7fa;
+    color: #333;
+    font-size: 17px;
+}
+
+/* ============================= */
+/* HEADER */
+/* ============================= */
+header {
+    background: #ffffff;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: center;
+}
+
+/* ============================= */
+/* DROPDOWN */
+/* ============================= */
+.dropdown {
+    position: relative;
+}
+
+.dropdown button {
+    padding: 10px 15px;
+    background: #e4e7ec;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: #fff;
+    min-width: 200px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    z-index: 10;
+}
+
+.dropdown-content button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #fff;
+    text-align: left;
+    cursor: pointer;
+}
+
+.dropdown-content button:hover {
+    background: #f1f3f5;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* ============================= */
+/* CONTENEDORES */
+/* ============================= */
+#fic,
+.fic2_escena {
+    max-width: 1000px;
+    width: 92%;
+    margin: 50px auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+}
+
+/* ============================= */
+/* TITULOS */
+/* ============================= */
+h1 {
+    text-align: center;
+    font-size: 34px;
+    margin-bottom: 25px;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 26px;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #666;
+}
+
+/* ============================= */
+/* TEXTO */
+/* ============================= */
+.descripcion,
+.narracion,
+.fic2_narracion {
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+.dialogo,
+.fic2_dialogo {
+    margin-left: 20px;
+    margin-bottom: 18px;
+}
+
+.pensamiento,
+.fic2_pensamiento {
+    font-style: italic;
+    color: #777;
+    margin: 14px 0;
+}
+
+/* ============================= */
+/* PERSONAJES */
+/* ============================= */
+.personaje {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.nombre {
+    font-weight: 500;
+}
+
+/* ============================= */
+/* BOTONES */
+/* ============================= */
+button {
+    padding: 8px 14px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background: #f9f9f9;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background: #eee;
+}
+
+/* BOTÓN ESCENA */
+.btn-escena {
+    margin-top: 25px;
+    display: block;
+    width: 100%;
+}
+
+/* BOTÓN CAPÍTULO */
+.btn-capitulo {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #ff6b35;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-capitulo:hover {
+    background: #ff3b00;
+    transform: scale(1.05);
+}
+
+/* BOTÓN MINI */
+.fic2_btn_mini {
+    margin-left: 10px;
+    padding: 5px 12px;
+    font-size: 12px;
+    background: #333;
+    color: white;
+    border: none;
+    border-radius: 6px;
+}
+
+.fic2_btn_mini:hover {
+    background: #555;
+}
+
+/* ============================= */
+/* IMÁGENES */
+/* ============================= */
+.imagen-escena,
+.fic2_imagen {
+    display: flex;
+    justify-content: center;
+    margin: 25px 0;
+}
+
+.imagen-escena img,
+.fic2_imagen img {
+    width: 100%;
+    max-width: 320px;
+    border-radius: 10px;
+}
+
+/* ============================= */
+/* MODALES */
+/* ============================= */
+.modal,
+.fic2_modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.modal-content,
+.fic2_modal_content {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 340px;
+    text-align: center;
+}
+
+.modal img,
+.fic2_modal_content img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.cerrar,
+.fic2_cerrar {
+    margin-top: 15px;
+    width: 100%;
+}
+
+/* ============================= */
+/* 📱 TABLET */
+/* ============================= */
+@media (max-width: 768px) {
+
+    #fic,
+    .fic2_escena {
+        width: 95%;
+        margin: 25px auto;
+        padding: 20px;
+    }
+
+    body {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 21px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    .dialogo,
+    .fic2_dialogo {
+        margin-left: 12px;
+    }
+
+    .personaje {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .fic2_btn_mini {
+        margin-left: 0;
+        margin-top: 5px;
+    }
+}
+
+/* ============================= */
+/* 📱 CELULARES */
+/* ============================= */
+@media (max-width: 480px) {
+
+    body {
+        font-size: 15px;
+    }
+
+    #fic,
+    .fic2_escena {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .modal-content,
+    .fic2_modal_content {
+        padding: 18px;
+    }
+}
